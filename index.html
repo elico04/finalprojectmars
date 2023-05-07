@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Red Planet</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"  href="images/Tharsis_and_Valles_Marineris_-_Mars_Orbiter_Mission_(30055660701).png">
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <h1><span id="color"><span id="uppercase">R</span>ed</span><span id="color2"><span id="uppercase2">P</span>lanet</span><img src="images/Mars_symbol.svg.png" alt="Mars Symbol"></h1>
+        
+        <!-- Navigation Bar for both PC and Mobile -->
+
+        <i onclick="showMenu()" id="hamburger-icon" class="fa-solid fa-bars"></i>
+        <i onclick="hideMenu()" id="x-icon" class="fa-solid fa-xmark"></i>
+        <nav id="navigation" data-visible="false">
+            <ul>
+                <li id="box1"><a href="index.html" class="current">Home</a></li>
+                <li id="box2"><a href="characteristics.html">Characteristics</a></li>
+                <li><a href="climate.html">Climate</a></li>
+                <li><a href="orbit_rotation.html">Motion</a></li>
+                <li id="box3"><a href="origins.html">Origins</a></li>
+                <li id="box4"><a href="future.html">Future</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to Red Planet.</h2>
+
+            <!-- Countdown until break! -->
+
+            <h3 id="displaytimer"></h3>
+            <h3>until Break!</h3>
+            
+            <!-- Image Slideshow -->
+
+            <div class="container">
+                <div class="imagecarousel">
+                    <div class="image fadeout"><img src="images/79_mars_globe-web.jpg" alt=""></div>
+                    <div class="image fadeout"><img src="images/mars-a-small-red-planet.jpg" alt=""></div>
+                    <div class="image fadeout"><img src="images/the-martian-TIF_RSS_0001_fr_n_left-1001R_rgb.jpg" alt=""></div>
+                    <div class="image fadeout"><img src="images/23aa4588-32d5-49b9-85a8-08b50745f496.jpg" alt=""></div>
+                    <div class="image fadeout"><img src="images/DTG_PlanetDetailPage_mars.webp" alt=""></div>
+                    <div class="prev" onclick="showImage(-1)"><i class="fa-solid fa-angles-left"></i></div>
+                    <div class="next" onclick="showImage(1)"><i class="fa-solid fa-angles-right"></i></div>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span></p>
+            <h3>Eric Lico Productions</h3>  
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/slideshow.js"></script>
+
+</body>
+</html>
